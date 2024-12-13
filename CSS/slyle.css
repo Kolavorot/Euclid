@@ -534,7 +534,7 @@ body {
 
 .questions__list {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 32px;
 }
 
@@ -681,7 +681,7 @@ body {
   background: var(--grey);
 }
 
-.form__input:focus{
+.form__input:focus-visible{
   outline: none;
   background: var(--grey);
 }
