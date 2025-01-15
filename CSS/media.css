@@ -1,3 +1,23 @@
+@media(max-width: 1440px) {
+  /* about us */
+  .about-us__text {
+    max-width: 100%;
+  }
+
+  .about-us__lower {
+    flex-direction: column;
+  }
+
+  .about-us__left {
+    max-width: 100%;
+    min-height: 640px;
+  }
+
+  .about-us-right{
+    max-width: 100%;
+  }
+}
+
 @media(max-width: 1200px) {
   /* global */
 .container {
@@ -55,7 +75,92 @@
     padding: 24px 34px;
     font-size: 24px;
   }
+
+  /* about us */
+  .about-us {
+    padding-top: 43px;
+  }
+
+  .second-title {
+    margin-bottom: 24px;
+  }
+
+  .about-us__left-wrapper {
+    padding: 45px;
+  }
+
+  .about-us__left-descr {
+    font-size: 16px;
+    margin-right: 218px;
+  }
+
+  .about-us-right__wrapper {
+    padding: 69px 70px 101px 317px;
+    background-position: 76px center;
+  }
+
+  /* stages */
+  .stages-offset {
+    padding-top: 39px;
+  }
+
+  .stages__title {
+    margin-bottom: 34px;
+  }
+
+  .stages__descr {
+    margin-bottom: 25px;
+  }
+
+  .stages__wrapper {
+    margin-right: 47px;
+  }
+
+  .stages__content::after {
+    content: "";
+    min-width: 437px;
+    width: 100%;
+    min-height: 700px;
+    background-size: cover;
+  }
+
+  /* questions */
+  .questions-offset {
+    padding-top: 83px;
+  }
+
+  .questions__list {
+    flex-direction: column;
+  }
+
+  .questions__item {
+    max-width: 924px;
+    padding: 65px 65px 65px 60px;
+  }
+
+  .questions__title {
+    max-width: 800px;
+    margin-bottom: 10px;
+  }
+
+  /* footer */
+  .footer{
+    padding: 30px 0;
+  }
+
+  .footer__left {
+    margin-right: 90px;
+  }
+
+  .nav--footer {
+    max-width: 251px;
+  }
+
+  .footer__right{
+    display: none;
+  }
 }
+
 
 @media(max-width: 992px) {
   /* header */
@@ -95,6 +200,97 @@
     padding: 25px 39px;
     font-size: 23px;
   }
+
+  /* about us */
+  .about-us {
+    padding-top: 35px;
+  }
+
+  .about-us__left-wrapper {
+    padding: 35px 10px 20px 39px;
+  }
+
+  .about-us__left-descr {
+    max-width: 366px;
+    margin-right: 45px;
+  }
+
+  .about-us-right__wrapper{
+    padding: 41px 43px 35px 170px;
+    background-size: 114px 99px;
+    background-position: 40px center;
+  }
+
+  /* stages */
+  .stages-offset {
+    padding-top: 84px;
+  }
+
+  .stages__title {
+    margin-bottom: 32px;
+  }
+
+  .stages__wrapper {
+    margin: 0;
+  }
+
+  .stages__content {
+    flex-direction: column;
+  }
+
+  .stages__content::after {
+    display: none;
+  }
+
+  .stages__content::before {
+    content: "";
+    margin-right: 10px;
+    margin-bottom: 40px;
+    max-width: 668px;
+    width: 100%;
+    background-image: url("../img/stages.jpg");
+    background-repeat: no-repeat;
+    border-radius: 24px;
+  }
+
+  .stages__descr {
+    margin-bottom: 22px;
+  }
+
+  .stages__text {
+    display: inline;
+  }
+
+  /* questions */
+  .questions__item {
+    padding: 40px 65px 35px 40px;
+  }
+
+  .questions__title {
+    max-width: 563px;
+  }
+
+  /* footer */
+  .footer__container{
+    flex-direction: column;
+  }
+
+  .footer__title {
+    margin-bottom: 20px;
+  }
+
+  .footer__left {
+    order: 1;
+  }
+
+  .nav--footer {
+    display: none;
+  }
+
+  .footer__center {
+    margin: 0;
+    margin-bottom: 50px;
+  }
 }
 
 @media(max-width: 720px) {
@@ -119,6 +315,9 @@
   }
 
   /* header */
+  .header {
+    padding: 17px 0;
+  }
   .header__nav {
     width: 100%;
     order: 3;
@@ -159,5 +358,185 @@
     padding: 13px 28px;
     border-radius: 8px;
     font-size: 12px;
+  }
+
+  /* about us */
+  .about-us {
+    padding-top: 60px;
+  }
+
+  .second-title {
+    font-size: 24px;
+  }
+
+  .about-us__text {
+    margin-bottom: 14px;
+    font-size: 14px;
+  }
+
+  .about-us__left {
+    min-height: fit-content;
+    background-image: none;
+  }
+
+  .about-us__left::before{
+    content: "";
+    min-height: 200px;
+    width: 100%;
+    margin-bottom: 5px;
+    background-image: url("../img/about-us-content.png");
+    background-repeat: no-repeat;
+    background-position: top left;;
+    background-size: cover;
+    border-radius: 16px;
+  }
+
+  .about-us__left-wrapper{
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    background: none;
+  }
+
+  .about-us__left-descr {
+    max-width: 100%;
+    margin: 0;
+    margin-bottom: 13px;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--black);
+  }
+
+  .about-us__button {
+    max-width: 162px;
+    padding: 10px 44px;
+    font-size: 12px;
+    border-radius: 8px;
+    color: var(--orange);
+  }
+
+  .about-us-right__wrapper{
+    padding: 0;
+    padding-top: 60px;
+    border: none;
+    background-position: top left;
+    background-size: 64px 49px;
+  }
+
+  .about-us__title {
+    margin-bottom: 6px;
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  .about-us-right__text {
+    font-size: 14px;
+  }
+
+  /* stages */
+  .stages-offset {
+    padding-top: 62px;
+  }
+
+  .stages__title {
+    margin-bottom: 20px;
+  }
+
+  .stages__content::before{
+    content: "";
+    min-height: 160px;
+    width: 100%;
+    margin-bottom: 27px;
+    background-image: url("../img/stages-bg320.png");
+  }
+
+  .stages__third-title {
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  .stages__text {
+    font-size: 14px;
+  }
+
+  .stages__buttons {
+    gap: 10px;
+  }
+
+  .stages__button {
+    min-width: auto;
+    padding: 12px 44px;
+    font-size: 12px;
+    border-radius: 8px;
+  }
+
+  .stages__button-contract {
+    min-width: 118px;
+    padding: 12px 44px;
+    font-size: 12px;
+    border-radius: 8px;
+  }
+
+  /* questions */
+  .questions-offset {
+    padding-top: 68px;
+    padding-bottom: 52px;
+  }
+
+  .second-title {
+    margin-bottom: 20px;
+  }
+
+  .questions__item {
+    padding: 0;
+    border: none;
+  }
+
+  .questions__title {
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  .questions__descr {
+    font-size: 14px;
+  }
+
+  /* footer */
+  .footer{
+    padding: 30px 0;
+  }
+
+  .footer__title {
+    font-size: 24px;
+  }
+
+  .footer__left {
+    align-items: center;
+    margin: 0;
+  }
+
+  .form__textarea {
+    margin-bottom: 26px;
+  }
+
+  .form__wrapper {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .form__button {
+    max-width: 162px;
+    padding: 12px 15px;
+    font-size: 12px;
+    border-radius: 8px;
+  }
+
+  .footer__logo {
+    max-width: 131px;
+    /* margin-bottom: -24px; */
+  }
+
+  .social-link-svg{
+    max-width: 40px;
   }
 }

@@ -318,6 +318,7 @@ body {
 .about-us__left-wrapper{
   display: flex;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
   padding: 50px;
   background: linear-gradient(
@@ -681,7 +682,7 @@ body {
   background: var(--grey);
 }
 
-.form__input:focus-visible{
+.form__input:focus{
   outline: none;
   background: var(--grey);
 }
@@ -691,15 +692,14 @@ body {
 }
 
 .form__textarea {
-  width: 570px;
-  height: 150px;
+  max-width: 570px;
+  min-height: 150px;
+  width: 100%;
   padding: 14px;
   padding-left: 24px;
   margin-bottom: 32px;
-  resize: none;
   border-radius: 16px;
   background: var(--form);
-  border: none;
   transition: background 0.2s ease-in-out;
 }
 
@@ -725,7 +725,8 @@ body {
 .form__button {
   border-radius: 16px;
   padding: 19px 52px;
-  width: 269px;
+  max-width: 269px;
+  width: 100%;
   background: var(--orange);
   font-size: 16px;
   font-weight: 700;
